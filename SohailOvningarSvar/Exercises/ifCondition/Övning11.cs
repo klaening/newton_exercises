@@ -29,6 +29,11 @@ namespace SohailOvningar.ifCondition
             {
                 Console.WriteLine("Tal1 är större än tal2");
             }
+            else
+            {
+                Console.WriteLine("Tal1 är inte större än tal2");
+            }
+            Console.ReadKey();
         }
 
         public void Print()

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SohailOvningar.menus.TextMenus
+namespace SohailOvningar.menus
 {
     class HeadMenu
     {
@@ -15,7 +15,7 @@ namespace SohailOvningar.menus.TextMenus
             Console.Clear();
 
             String[] Exercises = { "Bob Tabor övningar", "Sequence Programming övningar", "if Condition övningar", "Loops övningar",
-                                  "Arrays övningar", "Exempel och Tenta" };
+                                  "Arrays övningar", "Collections" };
 
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("|                                   |");
@@ -25,15 +25,16 @@ namespace SohailOvningar.menus.TextMenus
             Console.WriteLine();
             Console.WriteLine();
 
-            /*for (int i = 0; i < 6; i++)
+            /*for (int i = 0; i < Exercises.Length; i++)
             {
-                Console.WriteLine($"{i+1}. {Choices[i]}");
+                Console.WriteLine($"{i+1}. {Exercises[i]}");
             }*/
-            int i = 1;
+
+            int i = 0;
 
             foreach (String exercise in Exercises)
             {
-                Console.WriteLine($"{i}. {Exercises}");
+                Console.WriteLine($"{i+1}. {Exercises[i]}");
                 i++;
             }
 

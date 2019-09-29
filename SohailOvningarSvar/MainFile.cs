@@ -22,7 +22,7 @@ namespace SohailOvningar
             do
             {
                 #region Head Menu
-                menus.TextMenus.HeadMenu headMenu = new menus.TextMenus.HeadMenu();
+                menus.HeadMenu headMenu = new menus.HeadMenu();
                 headMenu.PrintMenu();
 
                 choice = Console.ReadLine();
@@ -31,31 +31,31 @@ namespace SohailOvningar
                 {
                     case "1":
                         //Bob Tabor Menu
-                        menus.SwitchMenus.SwitchMenus menuBT = new menus.SwitchMenus.SwitchMenus();
+                        menus.BobTaborMenu menuBT = new menus.BobTaborMenu();
                         menuBT.PrintMenuBT();
                         break;
 
                     case "2":
                         //Sequence Programming Menu
-                        menus.SwitchMenus.SwitchMenus menuSP = new menus.SwitchMenus.SwitchMenus();
+                        menus.sequenceProgrammingMenu menuSP = new menus.sequenceProgrammingMenu();
                         menuSP.PrintMenuSP();
                         break;
 
                     case "3":
                         //If Loop Menu
-                        menus.SwitchMenus.SwitchMenus menuIf = new menus.SwitchMenus.SwitchMenus();
+                        menus.ifConditionMenu menuIf = new menus.ifConditionMenu();
                         menuIf.PrintMenuIf();
                         break;
 
                     case "4":
                         //For Loop Menu
-                        menus.SwitchMenus.SwitchMenus menuFor = new menus.SwitchMenus.SwitchMenus();
-                        menuFor.PrintMenuFor();
+                        menus.LoopsMenu menuLoops = new menus.LoopsMenu();
+                        menuLoops.PrintMenuLoops();
                         break;
 
                     case "5":
                         //Arrays Menu
-                        menus.SwitchMenus.SwitchMenus menuArrays = new menus.SwitchMenus.SwitchMenus();
+                        menus.ArraysMenu menuArrays = new menus.ArraysMenu();
                         menuArrays.PrintMenuArrays();
                         break;
 
