@@ -43,7 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercises\ArrayOwnExercises\ArrayÖvn1.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\ArrayÖvn2.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\ArrayÖvn3.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\ArrayÖvn4.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\ArrayÖvn5.cs" />
     <Compile Include="Exercises\Arrays\ArrayExamples.cs" />
+    <Compile Include="Exercises\Arrays\Övning66.cs" />
+    <Compile Include="Exercises\Arrays\Övning67.cs" />
+    <Compile Include="Exercises\Arrays\Övning68.cs" />
+    <Compile Include="Exercises\Arrays\Övning69.cs" />
+    <Compile Include="Exercises\Arrays\Övning70.cs" />
+    <Compile Include="Exercises\Arrays\Övning72.cs" />
     <Compile Include="Exercises\BobTabor\ForIteration.cs" />
     <Compile Include="Exercises\ifCondition\Övning11.cs" />
     <Compile Include="Exercises\ifCondition\Övning12.cs" />
@@ -101,6 +112,7 @@
     <Compile Include="menus\LoopsMenu.cs" />
     <Compile Include="menus\HeadMenu.cs" />
     <Compile Include="menus\ifConditionMenu.cs" />
+    <Compile Include="menus\OwnArrays.cs" />
     <Compile Include="menus\sequenceProgrammingMenu.cs" />
     <Compile Include="menus\CoolHeader.cs" />
     <Compile Include="menus\ArraysMenu.cs" />

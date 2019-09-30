@@ -24,40 +24,42 @@ medelvärdet.");
             string writeNumbers = "";
             int sum = 0;
             int median = 0;
+            int[] Numbers = new int[maxLength];
 
-            for (int i = 1; i <= maxLength ; i++)
+            for (int i = 0; i < maxLength ; i++)
             {
                 do
                 {
-                Console.Write($"Skriv in tal {i}: ");
-                number = Convert.ToInt32(Console.ReadLine());
+                    Console.Write($"Skriv in tal {i+1}: ");
+                    number = Convert.ToInt32(Console.ReadLine());
 
-                if (number > 5000 && number < 10000)
-                {
+                    if (number > 5000 && number < 10000)
+                    {
+                        Numbers[i] = number;
                         writeNumbers = $"{writeNumbers}" + $" {number}";
+
                         sum += number;
-                }
-                else if (number == 0)
-                {
-                    return;
-                }
-                else
-                {
-                    Console.WriteLine("Inkorrekt tal!");
-                }
-                if (i == 5)
-                {
-                    median += number;
-                }
-                if (i == maxLength)
-                {
-                        Console.WriteLine($"Siffrorna du skrev in:{writeNumbers}.");
-                        Console.WriteLine($"Summan av talen är: {sum}");
-                        Console.WriteLine($"Medelvärdet är: {CalcAverage(sum)}");
-                        Console.WriteLine($"Medianen är: {median}");
-                }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Inkorrekt tal!");
+                    }
+                    if (i == 5)
+                    {
+                        median += number;
+                    }
                 } while (number < 5000 || number > 10000);
             }
+
+            Console.Write("Siffrorna du skrev in var: ");
+            foreach (int nr in Numbers)
+            {
+                    Console.Write($"{nr} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Summan av talen är: {sum}");
+            Console.WriteLine($"Medelvärdet är: {CalcAverage(sum)}");
+            Console.WriteLine($"Medianen är: {median}");
             Console.ReadKey();
         }
 

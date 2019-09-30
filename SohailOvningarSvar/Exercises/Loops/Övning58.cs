@@ -41,7 +41,13 @@ Exempel på utskrift:
             float number;
             float largestNumber = 0;
 
-            for (int i = 1; i <= 10; i++)
+            //Anledningen till att ha första numret här är för att kunna sätta largestNumber till första input
+            Console.Write($"Input a number, nr 1: ");
+            number = float.Parse(Console.ReadLine());
+            largestNumber = number;
+            Console.WriteLine();
+
+            for (int i = 2; i <= 10; i++)
             {
                 Console.Write($"Input a number, nr{i}: ");
                 number = float.Parse(Console.ReadLine());

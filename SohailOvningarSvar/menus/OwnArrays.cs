@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace SohailOvningar.menus
 {
-    class ArraysMenu
+    class OwnArrays
     {
         public void PrintMenu()
         {
             Console.Clear();
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("|                                   |");
-            Console.WriteLine("|            Meny Arrays            |");
+            Console.WriteLine("|          Meny Egna Arrays         |");
             Console.WriteLine("|                                   |");
             Console.WriteLine("-------------------------------------");
             Console.WriteLine();
             Console.WriteLine();
 
-            for (int i = 65; i <= 69; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine($"{i}. Övning {i}");
             }
@@ -29,52 +29,45 @@ namespace SohailOvningar.menus
             Console.WriteLine();
             Console.Write("Välj case: ");
         }
-        public void PrintSwitchArrays()
+
+        String choice;
+        public void PrintSwitchOwnArrays()
         {
-            String choice;
             do
             {
-                ArraysMenu menuArrays = new ArraysMenu();
-                menuArrays.PrintMenu();
+                Console.Clear();
+                PrintMenu();
 
                 choice = Console.ReadLine();
-                #region Arrays
+
                 switch (choice)
                 {
                     case "0":
                         break;
 
                     case "1":
-                        Exercises.Arrays.ArrayExamples.RunArray();
+                        Exercises.ArrayOwnExercises.ArrayÖvn1 ö1 = new Exercises.ArrayOwnExercises.ArrayÖvn1();
+                        ö1.Print();
                         break;
 
                     case "2":
-                        Exercises.Collections.ListOrCollections.RunMedical();
+                        Exercises.ArrayOwnExercises.ArrayÖvn2 ö2 = new Exercises.ArrayOwnExercises.ArrayÖvn2();
+                        ö2.Print();
                         break;
 
-                    case "66":
-                        Exercises.Arrays.Övning66 ö66 = new Exercises.Arrays.Övning66();
-                        ö66.Print();
+                    case "3":
+                        Exercises.ArrayOwnExercises.ArrayÖvn3 ö3 = new Exercises.ArrayOwnExercises.ArrayÖvn3();
+                        ö3.Print();
                         break;
 
-                    case "68":
-                        Exercises.Arrays.Övning68 ö68 = new Exercises.Arrays.Övning68();
-                        ö68.Print();
+                    case "4":
+                        Exercises.ArrayOwnExercises.ArrayÖvn4 ö4 = new Exercises.ArrayOwnExercises.ArrayÖvn4();
+                        ö4.Print();
                         break;
 
-                    case "69":
-                        Exercises.Arrays.Övning69 ö69 = new Exercises.Arrays.Övning69();
-                        ö69.Print();
-                        break;
-
-                    case "70":
-                        Exercises.Arrays.Övning70 ö70 = new Exercises.Arrays.Övning70();
-                        ö70.Print();
-                        break;
-
-                    case "72":
-                        Exercises.Arrays.Övning72 ö72 = new Exercises.Arrays.Övning72();
-                        ö72.Print();
+                    case "5":
+                        Exercises.ArrayOwnExercises.ArrayÖvn5 ö5 = new Exercises.ArrayOwnExercises.ArrayÖvn5();
+                        ö5.Print();
                         break;
 
                     default:
@@ -82,7 +75,6 @@ namespace SohailOvningar.menus
                         Console.ReadKey();
                         break;
                 }
-                #endregion
             } while (choice != "0");
         }
     }

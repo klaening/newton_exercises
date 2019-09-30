@@ -56,7 +56,12 @@ namespace SohailOvningar
                     case "5":
                         //Arrays Menu
                         menus.ArraysMenu menuArrays = new menus.ArraysMenu();
-                        menuArrays.PrintMenuArrays();
+                        menuArrays.PrintSwitchArrays();
+                        break;
+
+                    case "6":
+                        menus.OwnArrays menuOwnArray = new menus.OwnArrays();
+                        menuOwnArray.PrintSwitchOwnArrays();
                         break;
 
                     case "exit":

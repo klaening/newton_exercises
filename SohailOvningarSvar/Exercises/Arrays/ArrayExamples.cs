@@ -55,23 +55,23 @@ namespace SohailOvningar.Exercises.Arrays
             Console.WriteLine();
 
             //Alternativ 1
-            for (int i = 0; i < machSpeed.Length; i++)
+            for (int j = 0; j < machSpeed.Length; j++)
             {
-                Console.WriteLine($"mach speed nr {i+1}: {machSpeed[i]}");
+                Console.WriteLine($"mach speed nr {j+1}: {machSpeed[j]}");
             }
             Console.WriteLine();
 
             //Alternativ 2
-            int nr = 0;
+            int i = 0;
             foreach (var number in laps)
             {
-                Console.WriteLine($"lap nr {nr+1}: {number}");
-                nr++;
+                Console.WriteLine($"lap nr {i+1}: {number}");
+                i++;
             }
             Console.WriteLine();
 
             //Sorteringsexempel
-            int k = 0;
+            i = 1;
             //Sorterar i storleksordning minsta till största
             Array.Sort(laps);
             //Array.Sort<double>(laps);
@@ -80,8 +80,17 @@ namespace SohailOvningar.Exercises.Arrays
 
             foreach  (double number in laps)
             {
-                Console.WriteLine($"Nr1: {number}");
-                k++;
+                Console.WriteLine($"Nr{i}: {number}");
+                i++;
+            }
+
+            //Genom att använda LinQ kan man skriva såhär:
+            laps = laps.OrderByDescending(c => c).ToArray();
+            i = 0;
+            foreach (double number in laps)
+            {
+                Console.WriteLine($"Nr {i+1}: {laps[i]}");
+                i++;
             }
             Console.ReadLine();
         }

@@ -47,7 +47,7 @@ There are: 4 nr of occurances of the same nr");
             Console.Write("Input first nr: ");
             input = int.Parse(Console.ReadLine());
 
-            int compareNumber = input;
+            int previousNumber = input;
             int i = 2;
             int nrOfOccurances = 0;
 
@@ -56,12 +56,12 @@ There are: 4 nr of occurances of the same nr");
                 Console.Write($"Input nr {i} to compare to previous nr: ");
                 input = int.Parse(Console.ReadLine());
 
-                if (compareNumber == input)
+                if (previousNumber == input)
                 {
-                    nrOfOccurances += 1;
+                    nrOfOccurances++;
                 }
 
-                compareNumber = input;
+                previousNumber = input;
                 i++;
             }
 

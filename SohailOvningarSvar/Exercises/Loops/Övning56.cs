@@ -43,18 +43,15 @@ Hantera inläsningen om det första inlästa talet är stopvärdet.");
                 Console.Write($"Skriv in tal {i}: ");
                 number = int.Parse(Console.ReadLine());
 
-                if (number == 9999)
-                {
-                    Console.WriteLine($"Medelvärdet är: {CalcAverage(sum, amountNumbers).ToString("F2")}");
-                    Console.ReadKey();
-                }
-                else
+                if (number != 9999)
                 {
                     sum += number;
                     amountNumbers += 1;
                     i++;
                 }
             }
+            Console.WriteLine($"Medelvärdet är: {CalcAverage(sum, amountNumbers).ToString("F2")}");
+            Console.ReadKey();
         }
 
         public double CalcAverage(double sum, double amount)
