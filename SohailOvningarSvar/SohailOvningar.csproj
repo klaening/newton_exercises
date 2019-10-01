@@ -55,6 +55,9 @@
     <Compile Include="Exercises\Arrays\Övning69.cs" />
     <Compile Include="Exercises\Arrays\Övning70.cs" />
     <Compile Include="Exercises\Arrays\Övning72.cs" />
+    <Compile Include="Exercises\Arrays\Övning73.cs" />
+    <Compile Include="Exercises\Arrays\Övning74.cs" />
+    <Compile Include="Exercises\Arrays\Övning75.cs" />
     <Compile Include="Exercises\BobTabor\ForIteration.cs" />
     <Compile Include="Exercises\ifCondition\Övning11.cs" />
     <Compile Include="Exercises\ifCondition\Övning12.cs" />

@@ -10,16 +10,34 @@ namespace SohailOvningar.Exercises.Arrays
     {
         public void Print()
         {
-            /*String socNumber1 = SocNumbers[0];
-            char[] socArray = socNumber1.ToCharArray();
+            Console.Clear();
+            Console.WriteLine(@"Övn66: En array innehåller personnr, med formatet YYMMDD-NNNN. 
+Kontrollera att födelsedatumet följ av en streck innan de fyra sista siffrorna, skriv ut ett fel meddelande annars.");
+            Console.WriteLine();
 
-            foreach (char nr in socArray)
+            String socNumber = Console.ReadLine();
+            char[] charArray = socNumber.ToCharArray();
+            String check = charArray[6].ToString();
+
+            if (check != "-")
             {
-                if (socArray[6] != "-")
-                {
+                Console.WriteLine("Wrong input");
+            }
+            else
+            {
+                Console.WriteLine("Right input!");
+            }
+            Console.ReadKey();
 
-                }
-            }*/
+
+            String socNumberEx = "871107-4859";
+            char[] socArray = socNumberEx.ToCharArray(6, 1);
+
+            //String är dubbelfnuttar, char är enkelfnuttar
+            if (socNumberEx[6] != '-')
+            {
+                Console.WriteLine("Wrong input!");
+            }
 
 
             /*char[] charArray = new char[11];

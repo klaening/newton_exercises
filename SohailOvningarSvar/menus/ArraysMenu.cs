@@ -57,6 +57,11 @@ namespace SohailOvningar.menus
                         ö66.Print();
                         break;
 
+                    case "67":
+                        Exercises.Arrays.Övning67 ö67 = new Exercises.Arrays.Övning67();
+                        ö67.Print();
+                        break;
+
                     case "68":
                         Exercises.Arrays.Övning68 ö68 = new Exercises.Arrays.Övning68();
                         ö68.Print();
@@ -75,6 +80,21 @@ namespace SohailOvningar.menus
                     case "72":
                         Exercises.Arrays.Övning72 ö72 = new Exercises.Arrays.Övning72();
                         ö72.Print();
+                        break;
+
+                    case "73":
+                        Exercises.Arrays.Övning73 ö73 = new Exercises.Arrays.Övning73();
+                        ö73.Print();
+                        break;
+
+                    case "74":
+                        Exercises.Arrays.Övning74 ö74 = new Exercises.Arrays.Övning74();
+                        ö74.Print();
+                        break;
+
+                    case "75":
+                        Exercises.Arrays.Övning75 ö75 = new Exercises.Arrays.Övning75();
+                        ö75.Print();
                         break;
 
                     default:
