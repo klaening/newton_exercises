@@ -34,6 +34,31 @@ The last negative nr -5 was on index: 2");
                     index = i;
                 }
             }
+
+            Console.WriteLine($"The last negative nr {lastNegative} was on index: {index}");
+            Console.ReadKey();
+
+            //Alternativ lösning
+            /*foreach (int number in intArray)
+            {
+                if (number < 0)
+                {
+                    lastNegative = number;
+                    index = Array.IndexOf(intArray, number);
+                }
+            }*/
+
+            //Sohails lösning
+            for (int i = intArray.Length; i <= 0; i--)
+            {
+                if (intArray[i] < 0)
+                {
+                    Console.WriteLine($"The last negative nr {intArray[i]} was on index: {i}");
+                    i = 0;
+                    //break; funkar också
+                }
+            }
+
             Console.WriteLine($"The last negative nr {lastNegative} was on index: {index}");
             Console.ReadKey();
         }

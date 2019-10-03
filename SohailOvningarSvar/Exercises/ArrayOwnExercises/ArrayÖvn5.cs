@@ -28,31 +28,47 @@ Total number of duplicate elements found in the array is : 1 ");
 
             int[] Array1 = new int[length];
             int[] Array2 = new int[length];
-            int duplicates = 0;
+            int[] Array3 = new int[length];
+            int duplicates = 1, count = 0;
 
             for (int i = 0; i < length; i++)
             {
+                Console.Write($"element - {i} : ");
                 Array1[i] = int.Parse(Console.ReadLine());
             }
 
             for (int i = 0; i < length; i++)
             {
-                Array1[i] = Array2[i];
+                Array2[i] = Array1[i];
             }
 
             for (int i = 0; i < length; i++)
             {
-                for (int j = 1; j < length; j++)
+                for (int j = 0; j < length; j++)
                 {
                     if (Array1[i] == Array2[j])
                     {
+                        Array3[j] = duplicates;
                         duplicates++;
-                        Console.WriteLine(duplicates);
                     }
+                }
+                duplicates = 1;
+            }
+
+            for (int i = 0; i < length; i++)
+            {
+                Console.WriteLine(Array3[i]);
+            }
+
+            for (int i = 0; i < Array3.Length; i++)
+            {
+                if (Array3[i] == 2)
+                {
+                    count++;
                 }
             }
 
-            Console.WriteLine($"Number of duplicates are: {duplicates}");
+            Console.WriteLine($"Number of duplicates are: {count}");
             Console.ReadLine();
         }
     }

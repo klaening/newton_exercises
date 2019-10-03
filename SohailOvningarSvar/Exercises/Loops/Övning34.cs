@@ -10,10 +10,7 @@ namespace SohailOvningar.Exercises.Loops
     {
         public void Print()
         {
-            Console.WriteLine("Läs in ett tecken i taget tills en * skrivs in.");
-            Console.WriteLine();
-
-            String input = Console.ReadLine();
+            String input = "*";
 
             do
             {
@@ -21,6 +18,11 @@ namespace SohailOvningar.Exercises.Loops
                 input = Console.ReadLine();
             } while (input != "*");
 
+            /*while (input != "*")
+            {
+                Console.Write("Skriv in ett tal: ");
+                input = Console.ReadLine();
+            }*/
             Console.WriteLine($"Du skrev: {input}");
             Console.WriteLine("Hej då!");
             Console.ReadKey();

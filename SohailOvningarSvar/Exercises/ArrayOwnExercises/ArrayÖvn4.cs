@@ -26,7 +26,48 @@ The elements copied into the second array are :
 15 10 12 ");
             Console.WriteLine();
 
+            int length;
+            int counter = 0;
+
             Console.Write("Input the number of elements to be stored in the array: ");
+            length = int.Parse(Console.ReadLine());
+
+            int[] intArray = new int[length];
+            int[] intArray2 = new int[length];
+
+            Console.WriteLine($"Input {length} elements in the array: ");
+            for (int i = 0; i < intArray.Length; i++)
+            {
+                Console.Write($"element : ");
+                Console.WriteLine();
+                intArray[i] = int.Parse(Console.ReadLine());
+            }
+
+            foreach (int number in intArray)
+            {
+                intArray2[counter] = intArray[counter];
+                counter++;
+            }
+
+            Console.WriteLine("The elements stored in the first array are:");
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write(intArray[i]);
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("The elements stored in the second array are:");
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write(intArray2[i]);
+            }
+            Console.WriteLine();
+            Console.ReadKey();
+
+
+
+
+            /*Console.Write("Input the number of elements to be stored in the array: ");
             int length = int.Parse(Console.ReadLine());
             int[] Numbers = new int[length];
 
@@ -63,7 +104,7 @@ The elements copied into the second array are :
                 Console.WriteLine(number);
             }
 
-            //Array.Copy(Array Numbers, Array Numbers2, int length);
+            //Array.Copy(Array Numbers, Array Numbers2, int length);*/
             Console.ReadLine();
         }
     }

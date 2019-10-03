@@ -23,8 +23,9 @@ namespace SohailOvningar.menus
             {
                 Console.WriteLine($"{i}. Övning {i}");
             }
-
             Console.WriteLine();
+
+            Console.WriteLine("");
             Console.WriteLine("0. Huvudmeny");
             Console.WriteLine();
             Console.Write("Välj case: ");
@@ -68,6 +69,17 @@ namespace SohailOvningar.menus
                     case "5":
                         Exercises.ArrayOwnExercises.ArrayÖvn5 ö5 = new Exercises.ArrayOwnExercises.ArrayÖvn5();
                         ö5.Print();
+                        //ö5.PrintFacit();
+                        break;
+
+                    case "5a":
+                        Exercises.ArrayOwnExercises.Övning5Restart ö5a = new Exercises.ArrayOwnExercises.Övning5Restart();
+                        ö5a.Print();
+                        break;
+
+                    case "6":
+                        Exercises.ArrayOwnExercises.ArrayÖvn6 ö6 = new Exercises.ArrayOwnExercises.ArrayÖvn6();
+                        ö6.Print();
                         break;
 
                     default:

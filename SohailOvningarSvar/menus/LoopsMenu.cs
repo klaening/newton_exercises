@@ -19,12 +19,19 @@ namespace SohailOvningar.menus
             Console.WriteLine();
             Console.WriteLine();
 
-            for (int i = 1; i <= 35; i++)
+            for (int i = 31; i <= 65; i++)
             {
-                Console.WriteLine($"{i + 30}. Övning {i + 30}");
+                if (i == 36 || i == 38 || i == 45 || i == 50 || i == 57 || i == 63 || i == 64)
+                {
+                }
+                else
+                {
+                    Console.WriteLine($"{i}. Övning {i}");
+                }
             }
-
             Console.WriteLine();
+
+            Console.WriteLine("ex. Multiplication Example");
             Console.WriteLine("0. Huvudmeny");
             Console.WriteLine();
 
@@ -46,6 +53,11 @@ namespace SohailOvningar.menus
 
                 switch (choice)
                 {
+                    case "ex":
+                        Exercises.Loops.LoopMultiplicationExample le = new Exercises.Loops.LoopMultiplicationExample();
+                        le.Print();
+                        break;
+
                     case "0":
                         break;
 
