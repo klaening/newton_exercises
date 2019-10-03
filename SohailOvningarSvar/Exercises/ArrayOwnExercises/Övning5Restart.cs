@@ -14,9 +14,9 @@ namespace SohailOvningar.Exercises.ArrayOwnExercises
             int length = int.Parse(Console.ReadLine());
 
             int[] intArray = new int[length];
-            int[] intArray2 = new int[length];
-            int[] intArray3 = new int[length];
+            int[] arrOccurances = new int[length];
             int occurances = 1;
+            int duplicates = 0;
 
             for (int i = 0; i < intArray.Length; i++)
             {
@@ -24,31 +24,34 @@ namespace SohailOvningar.Exercises.ArrayOwnExercises
                 intArray[i] = int.Parse(Console.ReadLine());
             }
 
-            intArray.CopyTo(intArray2, 0);
-
             for (int i = 0; i < length; i++)
             {
                 for (int j = 0; j < length; j++)
                 {
-                    if (intArray[i] == intArray2[j])
+                    if (intArray[i] == intArray[j])
                     {
-                        intArray3[i] = occurances;
+                        arrOccurances[j] = occurances;
                         occurances++;
                     }
                 }
                 occurances = 1;
             }
 
-            /*for (int i = 0; i < length; i++)
+            foreach (int element in arrOccurances)
             {
-                if (intArray3)
-                {
+                Console.WriteLine(element);
+            }
 
+            for (int i = 0; i < length; i++)
+            {
+                if (arrOccurances[i] == 2)
+                {
+                    duplicates++;
                 }
             }
 
             Console.WriteLine($"There are {duplicates} duplicates.");
-            Console.ReadLine();*/
+            Console.ReadLine();
         }
     }
 }

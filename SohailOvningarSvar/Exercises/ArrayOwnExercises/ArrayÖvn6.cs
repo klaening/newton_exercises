@@ -34,6 +34,8 @@ The unique elements found in the array are :
                 intArray[i] = int.Parse(Console.ReadLine());
             }
 
+            Console.Write("The unique elements are: ");
+
             for (int i = 0; i < length; i++)
             {
                 counter = 0;
@@ -54,13 +56,9 @@ The unique elements found in the array are :
                     }
                 }
 
-                if (counter == 0)
-                {
-                    Console.WriteLine($"Unique numbers: {intArray[i]}");
-                }
-                counter = 0;
-            }
+                Console.Write("");
 
+            }
             Console.ReadKey();
         }
     }
