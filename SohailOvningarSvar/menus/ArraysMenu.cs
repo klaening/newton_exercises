@@ -20,7 +20,7 @@ namespace SohailOvningar.menus
             Console.WriteLine();
 
             Console.WriteLine("ex. Exempel");
-            for (int i = 66; i <= 76; i++)
+            for (int i = 66; i <= 77; i++)
             {
                 if (i != 71)
                 {
@@ -44,6 +44,9 @@ namespace SohailOvningar.menus
                 #region Arrays
                 switch (choice)
                 {
+                    case "0":
+                        break;
+
                     case "1":
                         Exercises.Arrays.ArrayExamples.RunArray();
                         break;
@@ -96,6 +99,16 @@ namespace SohailOvningar.menus
                     case "76":
                         Exercises.Arrays.Övning76 ö76 = new Exercises.Arrays.Övning76();
                         ö76.Print();
+                        break;
+
+                    case "77":
+                        Exercises.Arrays.Övning77 ö77 = new Exercises.Arrays.Övning77();
+                        ö77.Print();
+                        break;
+
+                    case "78":
+                        Exercises.Arrays.Övning78 ö78 = new Exercises.Arrays.Övning78();
+                        ö78.Print();
                         break;
 
                     default:
