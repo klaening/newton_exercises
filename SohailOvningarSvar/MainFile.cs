@@ -15,12 +15,16 @@ namespace SohailOvningar
             Console.Clear();
 
             menus.CoolHeader coolHeader = new menus.CoolHeader();
-            coolHeader.PrintCoolHeader2();
+            coolHeader.PrintCoolHeader1();
 
             String choice;
 
             do
             {
+                Console.Clear();
+                menus.CoolHeader cH = new menus.CoolHeader();
+                cH.PrintCoolHeader2();
+
                 #region Head Menu
                 menus.HeadMenu headMenu = new menus.HeadMenu();
                 headMenu.PrintMenu();

@@ -10,6 +10,8 @@ namespace SohailOvningar.menus
     {
         public void PrintMenu()
         {
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             String[] Choices = { "Kvadrat", "Salary Provision", "Calculate Hours", "Sum", "Currency",
                                         "Algorythm", "Petrol", "RectangleArea", "CircleArea", "Fahrenheit to Celsius" };
 

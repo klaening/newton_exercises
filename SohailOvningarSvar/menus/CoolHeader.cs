@@ -21,7 +21,7 @@ namespace SohailOvningar.menus
                              ";
 
             bool visible = true;
-            for (int i = 0; i <= 2; i++)
+            for (int i = 0; i <= 4; i++)
             {
                 Console.Clear();
                 Console.Write("\r" + (visible ? title : new String(' ', title.Length)));
@@ -42,7 +42,7 @@ namespace SohailOvningar.menus
                              ";
 
             Console.WriteLine(title);
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(0);
         }
     }
 }

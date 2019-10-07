@@ -10,18 +10,16 @@ namespace SohailOvningar.menus
     {
         public void PrintMenu()
         {
-            Console.BackgroundColor = ConsoleColor.Gray;
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.Clear();
+            //Console.Clear();
 
             String[] Exercises = { "Bob Tabor övningar", "Sequence Programming övningar", "if Condition övningar", "Loops övningar",
                                   "Arrays övningar", "Collections" };
 
-            Console.WriteLine("-------------------------------------");
-            Console.WriteLine("|                                   |");
-            Console.WriteLine("|               Meny                |");
-            Console.WriteLine("|                                   |");
-            Console.WriteLine("-------------------------------------");
+            //Console.WriteLine("-------------------------------------");
+            //Console.WriteLine("|                                   |");
+            //Console.WriteLine("|               Meny                |");
+            //Console.WriteLine("|                                   |");
+            //Console.WriteLine("-------------------------------------");
             Console.WriteLine();
             Console.WriteLine();
 
