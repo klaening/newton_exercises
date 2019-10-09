@@ -10,7 +10,6 @@ namespace SohailOvningar.menus
     {
         public void PrintMenu()
         {
-            Console.Clear();
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("|                                   |");
             Console.WriteLine("|          Meny Collections         |");
@@ -38,6 +37,7 @@ namespace SohailOvningar.menus
                 PrintMenu();
 
                 choice = Console.ReadLine();
+                Console.Clear();
 
                 switch (choice)
                 {

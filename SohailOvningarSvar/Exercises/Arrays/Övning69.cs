@@ -28,6 +28,9 @@ namespace SohailOvningar.Exercises.Arrays
 
   Index 10 has value 4");
 
+            Console.WriteLine();
+            Console.WriteLine("Lösning:");
+
             int[] intArray = { 2, 6, 3, 8, 23, 567, 2, 456, 21, 2, 19 };
 
             for (int i = 0; i < intArray.Length; i++)

@@ -30,6 +30,7 @@ namespace SohailOvningar
                 headMenu.PrintMenu();
 
                 choice = Console.ReadLine();
+                Console.Clear();
 
                 switch (choice)
                 {

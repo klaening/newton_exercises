@@ -1,7 +1,6 @@
 C:\Users\Mikael\source\repos\Newton Övningar\SohailOvningarSvar\SohailOvningarSvar\bin\Debug\SohailOvningarSvar.exe.config
 C:\Users\Mikael\source\repos\Newton Övningar\SohailOvningarSvar\SohailOvningarSvar\bin\Debug\SohailOvningarSvar.exe
 C:\Users\Mikael\source\repos\Newton Övningar\SohailOvningarSvar\SohailOvningarSvar\bin\Debug\SohailOvningarSvar.pdb
-C:\Users\Mikael\source\repos\Newton Övningar\SohailOvningarSvar\SohailOvningarSvar\obj\Debug\SohailOvningar.csproj.CoreCompileInputs.cache
 C:\Users\Mikael\source\repos\Newton Övningar\SohailOvningarSvar\SohailOvningarSvar\obj\Debug\SohailOvningarSvar.exe
 C:\Users\Mikael\source\repos\Newton Övningar\SohailOvningarSvar\SohailOvningarSvar\obj\Debug\SohailOvningarSvar.pdb
 C:\Users\Mikael\source\repos\Newton Övningar\SohailOvningarSvar\SohailOvningarSvar\obj\Debug\SohailOvningar.csprojAssemblyReference.cache

@@ -10,7 +10,7 @@ namespace SohailOvningar.menus
     {
         public void PrintMenu()
         {
-            Console.Clear();
+
             Console.WriteLine("*-----------------------------------*");
             Console.WriteLine("|                                   |");
             Console.WriteLine("|               Meny                |");
@@ -38,6 +38,7 @@ namespace SohailOvningar.menus
                 menuIf.PrintMenu();
 
                 choice = Console.ReadLine();
+                Console.Clear();
 
                 #region ifCondition Cases
 

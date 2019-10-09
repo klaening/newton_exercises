@@ -15,7 +15,6 @@ namespace SohailOvningar.menus
             String[] Choices = { "Kvadrat", "Salary Provision", "Calculate Hours", "Sum", "Currency",
                                         "Algorythm", "Petrol", "RectangleArea", "CircleArea", "Fahrenheit to Celsius" };
 
-            Console.Clear();
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("|                                   |");
             Console.WriteLine("|               Meny                |");
@@ -44,6 +43,7 @@ namespace SohailOvningar.menus
                 menuSP.PrintMenu();
 
                 choice = Console.ReadLine();
+                Console.Clear();
 
                 #region Sequence Programming Cases
 
