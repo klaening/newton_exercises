@@ -46,6 +46,7 @@
     <Compile Include="Exercises\ArrayOwnExercises\Övning5Restart.cs" />
     <Compile Include="Exercises\Arrays\Övning77.cs" />
     <Compile Include="Exercises\Arrays\Övning78.cs" />
+    <Compile Include="Exercises\Exempel\Reference.cs" />
     <Compile Include="Exercises\Loops\LoopMultiplicationExample.cs" />
     <Compile Include="Exercises\ArrayOwnExercises\ArrayÖvn1.cs" />
     <Compile Include="Exercises\ArrayOwnExercises\ArrayÖvn2.cs" />

@@ -8,7 +8,7 @@ namespace SohailOvningar.Exercises.Loops
 {
     class Övning65
     {
-        public void Print()
+        public static void Print()
         {
             Console.WriteLine(@"
 Indata består av 10 positiva tal. Beräkna skillnaden mellan det 
@@ -53,7 +53,7 @@ The diff betweeen the largest and second largest nr is: 5");
             Console.ReadKey();
         }
 
-        public int CalcDifference(int largest, int secondLargest)
+        public static int CalcDifference(int largest, int secondLargest)
         {
             return largest - secondLargest;
         }

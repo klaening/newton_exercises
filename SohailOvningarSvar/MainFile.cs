@@ -69,6 +69,10 @@ namespace SohailOvningar
                         menuOwnArray.PrintSwitchOwnArrays();
                         break;
 
+                    case "7":
+                        Exercises.Exempel.Reference.ReferenceExempel();
+                        break;
+
                     case "exit":
                         Console.WriteLine("Avslutar program.");
                         break;

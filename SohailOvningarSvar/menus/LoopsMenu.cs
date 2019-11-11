@@ -198,8 +198,7 @@ namespace SohailOvningar.menus
                         break;
 
                     case "65":
-                        Exercises.Loops.Övning65 ö65 = new Exercises.Loops.Övning65();
-                        ö65.Print();
+                        Exercises.Loops.Övning65.Print();
                         break;
 
                     default:

@@ -13,7 +13,7 @@ namespace SohailOvningar.menus
             //Console.Clear();
 
             String[] Exercises = { "Bob Tabor övningar", "Sequence Programming övningar", "if Condition övningar", "Loops övningar",
-                                  "Arrays övningar", "Collections" };
+                                  "Arrays övningar", "Collections", "Examples" };
 
             //Console.WriteLine("-------------------------------------");
             //Console.WriteLine("|                                   |");

@@ -31,14 +31,18 @@ x och n ska läsas in.");
 
                     int prod = 1;
 
+                    if (n == 0)
+                    {
+                        Console.WriteLine($"Resultat: {prod}");
+                        break;
+                    }
+
                     for (int i = 1; i <= n; i++)
                     {
                         prod *= x;
-                        Console.WriteLine(i);
                     }
 
                     Console.WriteLine($"Resultat: {prod}");
-                    Console.WriteLine();
                 }
                 else
                 {
@@ -47,11 +51,12 @@ x och n ska läsas in.");
                     Console.ReadKey();
                 }
             } while (x == 0);
+            Console.ReadKey();
         }
 
-        public int CalcAlgorythm(int x, int n)
-        {
-            return 0;
-        }
+        //public int CalcAlgorythm(int x, int n)
+        //{
+        //    return 0;
+        //}
     }
 }
