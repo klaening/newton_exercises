@@ -10,20 +10,20 @@ namespace SohailOvningar.Exercises.Exempel
     {
         public static void ReferenceExempel()
         {
-            int i = 1;
+            int i;
             double d = 2;
 
-            Console.WriteLine($"Före uppdateringen:    i={i} och d={d}");
+            Console.WriteLine($"Före uppdateringen:    ");//i={i} och d={d}");
             Console.WriteLine();
 
-            Uppdatera(i, d);
+            Uppdatera(out i, d);
 
             Console.WriteLine($"Efter uppdateringen:   i={i} och d={d}");
             Console.WriteLine("Dvs samma värden, uppdateringsmetoden medförde ingen ändring i ursprungliga variablerna utanför metoden.");
             Console.WriteLine();
 
             UppdateraInt(i);
-            UppdateraDouble(d);
+            d = UppdateraDouble(d);
             Console.WriteLine($"Efter uppdateringen:   i={i} och d={d}");
             Console.WriteLine();
 
@@ -33,7 +33,7 @@ namespace SohailOvningar.Exercises.Exempel
             Console.ReadKey();
         }
 
-        public static void Uppdatera(int i, double d)
+        public static void Uppdatera(out int i, double d)
         {
             i = 100;
             d = 200;
