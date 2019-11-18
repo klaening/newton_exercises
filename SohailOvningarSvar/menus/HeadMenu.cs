@@ -13,20 +13,10 @@ namespace SohailOvningar.menus
             //Console.Clear();
 
             String[] Exercises = { "Bob Tabor övningar", "Sequence Programming övningar", "if Condition övningar", "Loops övningar",
-                                  "Arrays övningar", "Collections", "Examples" };
+                                  "Arrays övningar", "Egna övningar", "Examples"};
 
-            //Console.WriteLine("-------------------------------------");
-            //Console.WriteLine("|                                   |");
-            //Console.WriteLine("|               Meny                |");
-            //Console.WriteLine("|                                   |");
-            //Console.WriteLine("-------------------------------------");
             Console.WriteLine();
             Console.WriteLine();
-
-            /*for (int i = 0; i < Exercises.Length; i++)
-            {
-                Console.WriteLine($"{i+1}. {Exercises[i]}");
-            }*/
 
             int i = 0;
 

@@ -43,7 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercises\ArrayOwnExercises\Övning10.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning11.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning12.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning13.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning14.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning15.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning16.cs" />
     <Compile Include="Exercises\ArrayOwnExercises\Övning5Restart.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning7.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning8.cs" />
+    <Compile Include="Exercises\ArrayOwnExercises\Övning9.cs" />
     <Compile Include="Exercises\Arrays\Övning77.cs" />
     <Compile Include="Exercises\Arrays\Övning78.cs" />
     <Compile Include="Exercises\Exempel\Reference.cs" />
