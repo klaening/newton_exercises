@@ -195,6 +195,11 @@ namespace SohailOvningar.menus
                         ö28.Print();
                         break;
 
+                    case "29":
+                        Övning29 ö29 = new Övning29();
+                        ö29.Print();
+                        break;
+
                     default:
                         Console.WriteLine("Error, try again");
                         Console.ReadKey();
